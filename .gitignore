@@ -1,0 +1,51 @@
+# Ambiente e segredos
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.crt
+*.p12
+*.pfx
+
+# Banco de dados local e arquivos gerados
+storage/*.sqlite
+storage/*.sqlite-*
+storage/*.db
+storage/*.db-*
+storage/*.lock
+storage/cron.lock
+storage/*.log
+storage/logs/
+storage/cache/
+storage/tmp/
+
+# Backups e dumps
+*.sql
+*.sql.gz
+*.dump
+*.bak
+*.backup
+*.zip
+*.tar
+*.tar.gz
+*.rar
+
+# Dependências, caso use Composer no futuro
+vendor/
+composer.lock
+
+# Arquivos do sistema/IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Copia local/duplicada do pacote antigo
+rss-motor-penedo/
+
+# Testes e relatórios locais
+coverage/
+.phpunit.result.cache
